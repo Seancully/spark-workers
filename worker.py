@@ -38,7 +38,7 @@ def addWorker(token, num):
       tdata=json.load(p)
     tdata['name']='slave'+str(num)
     data=json.dumps(tdata)
-    url='https://www.googleapis.com/compute/v1/projects/spark-371009/zones/europe-west1-b/instances'
+    url='https://www.googleapis.com/compute/v1/projects/modified-tome-401010/zones/europe-west1-b/instances'
     headers={"Authorization": "Bearer "+token}
     resp=requests.post(url,headers=headers, data=data)
     if resp.status_code==200:     
@@ -51,4 +51,3 @@ def addWorker(token, num):
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port='8080')
-    # test building again
