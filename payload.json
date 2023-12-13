@@ -24,7 +24,7 @@
     "enableDisplay": false
   },
   "guestAccelerators": [],
-  "keyRevocationActionType": "STOP",
+  "keyRevocationActionType": "NONE",
   "labels": {},
   "machineType": "projects/modified-tome-401010/zones/europe-west1-b/machineTypes/e2-medium",
   "metadata": {
@@ -48,6 +48,9 @@
       "subnetwork": "projects/modified-tome-401010/regions/europe-west1/subnetworks/default"
     }
   ],
+  "params": {
+    "resourceManagerTags": {}
+  },
   "reservationAffinity": {
     "consumeReservationType": "ANY_RESERVATION"
   },
